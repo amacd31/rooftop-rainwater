@@ -33,3 +33,18 @@ of 0.2mm and a general loss coefficient of 0.98. The input rainfall is 15mm:
 
     $ target/release/rooftop-rainwater -a 195.5 -l 0.2 -C 0.98 15
     2835.532
+
+## Configuration
+
+Alternate defaults can be set in a TOML file located in one of the following
+locations (first one found in this list will be used):
+
+  * Directory where the executable is located (e.g. `target/debug/rooftop-rainfall-parameters.toml`)
+  * `~/.config/rooftop-rainfall-parameters.toml`
+
+Example configuration (alternately see `rooftop-rainfall-parameters.toml.example`):
+
+    [parameters]
+    roof_area = 195.5
+    coefficient = 0.98
+    initial_loss = 0.2

@@ -1,0 +1,4 @@
+[parameters]
+roof_area = 195.5
+coefficient = 0.98
+initial_loss = 0.2
